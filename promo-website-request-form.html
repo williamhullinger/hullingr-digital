@@ -58,17 +58,20 @@
 
         <!--Form section-->
         <form class="form" 
-              name="website-request"
+              name="promo-quote"
               method="post"
               data-netlify="true"
-              netlify-honeypot="bot-field"
-              action="thanks.html"
+              data-netlify-honeypot="bot-field"
+              action="/thanks.html"
               >
+              <input type="hidden" name="form-name" value="promo-quote">
+              <input type="hidden" name="lead_source" value="promo">
 
-            <input type="hidden" name="form-name" value="website-request">
-                <p hidden>
-                    <label>Dont fill this out if you're human: </label>
-                </p>
+                <div hidden>
+                    <label>Dont fill this out if you're human: 
+                      <input name="bot-field">
+                    </label>
+                  </div>
 
           <div class="form__group">
             <label class="form__label" for="name">Name *</label>

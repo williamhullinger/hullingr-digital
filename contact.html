@@ -24,11 +24,11 @@
     <nav class="nav">
       <a class="nav__brand" href="index.html">Hullinger Digital</a>
 
-      <div class="nav__links">
-        <a href="work.html">Work</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </div>
+      <ul class="nav__links">
+        <li class="nav__item"><a class="nav__link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
+        <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
 
       <a class="btn btn--primary"
          href="https://calendly.com/william-hullingerdigital/30min"
@@ -42,11 +42,11 @@
   <!-- Contact -->
   <main class="contact">
 
-    <section class="contact__hero">
+    <section class="hero">
       <div class="container">
-        <h1>Let’s Build Something That Performs</h1>
-        <p>
-          Whether you need a new website or want to improve the one you have, let’s talk strategy.
+        <h1 class="hero__title">Get in touch</h1>
+        <p class="section__text about-hero__text">
+          Whether you need a new website or want to improve the one you have, shoot me a message, we'll talk strategy.
         </p>
       </div>
     </section>
@@ -57,14 +57,28 @@
 <section class="section section--page">
   <div class="container">
     <header class="section__header">
-      <h1 class="section__title">Schedule a Free Website Review</h1>
+      <h1 class="section__title">Schedule Your Free Website Review</h1>
       <p class="section__lead">The fastest way to get started is to book a free strategy call. We’ll review your current online presence and identify clear next steps.</p>
 
-      <a class="btn btn--primary" href="https://calendly.com/william-hullingerdigital/30min" target="_blank" rel="noopener">Book Your Free Review</a>
       <h2 class="section__subtitle">Send a Message</h2>
     </header>
 
-    <form class="form form--contact" action="thanks.html" method="get">
+    <form class="form" 
+          action="/thank-you.html" 
+          method="POST" 
+          name="contact" 
+          data-netlify="true" 
+          data-netlif-honeypot="bot-field"
+          >
+      <input type="hidden" name="form-name" value="contact">
+      <input type="hidden" name="lead_source" value="promo">
+
+      <div hidden>
+        <label>Don't fill this out if you're human: 
+        <input name="bot-field">
+        </label>
+      </div>
+
       <div class="form__group">
         <label class="form__label" for="name">Name *</label>
         <input class="form__input" type="text" id="name" name="name" required>

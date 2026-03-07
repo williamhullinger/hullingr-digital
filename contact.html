@@ -17,7 +17,7 @@
   </script>
 </head>
 
-<body>
+<body class="page page--contact">
 
   <!-- Header / Navigation -->
   <header class="site-header">
@@ -30,11 +30,13 @@
         <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
       </ul>
 
+      <a class="nav__phone" href="tel:+14174131473">Call (417) 413-1473</a>
+
       <a class="btn btn--primary"
          href="https://calendly.com/william-hullingerdigital/30min"
          target="_blank"
          rel="noopener">
-        Book Free Review
+        Request a Quote
       </a>
     </nav>
   </header>
@@ -51,24 +53,51 @@
       </div>
     </section>
 
-    
-<body class="page page--contact">
 
-<section class="section section--page">
-  <div class="container">
-    <header class="section__header">
-      <h1 class="section__title">Schedule Your Free Website Review</h1>
-      <p class="section__lead">The fastest way to get started is to book a free strategy call. We’ll review your current online presence and identify clear next steps.</p>
+    <section class="contact-direct section-card">
+      <div class="container contact-direct__content">
 
-      <h2 class="section__subtitle">Send a Message</h2>
-    </header>
+        <h2 class="contact-direct__title">Prefer to reach out directly?</h2>
 
-    <form class="form" 
+        <p class="contact-direct__text">
+        Call or text anytime and I'll get back to you as soon as possible.
+        </p>
+
+        <p class="contact-direct__item">
+        <strong>Call or Text:</strong>
+        <a href="tel:+14174131473">(417) 413-1473</a>
+        </p>
+
+        <p class="contact-direct__item">
+        <strong>Email:</strong>
+        <a href="mailto:william@hullinger.dev">william@hullinger.dev</a>
+        </p>
+
+        <p class="contact-direct__item">
+          <strong> Location:</strong> Springfield, Missouri
+        </p>
+
+        </div>
+    </section>
+
+
+    <section class="section section--page section-card">
+      <div class="container container-layout">
+        <header class="section__header">
+          <h1 class="section__title">Schedule Your Free Website Review</h1>
+          <p class="section__lead">The fastest way to get started is to book a free strategy call. We’ll review your current online presence and identify clear next steps.</p>
+
+          <h2 class="section__subtitle">Send a Message</h2>
+        </header>
+      </div>
+
+      <div class="contact-form">
+      <form class="form" 
           action="/thank-you.html" 
           method="POST" 
           name="contact" 
           data-netlify="true" 
-          data-netlif-honeypot="bot-field"
+          data-netlify-honeypot="bot-field"
           >
       <input type="hidden" name="form-name" value="contact">
       <input type="hidden" name="lead_source" value="promo">

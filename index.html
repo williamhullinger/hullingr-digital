@@ -48,6 +48,7 @@
       <ul class="nav__links">
       <li class="nav__item"><a class="nav__link" href="portfolio.html">Portfolio</a></li>
       <li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
+      <li class="nav__item"><a class="nav__link" href="reviews.html">Reviews</a></li>
       <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
     </ul>
 
@@ -153,7 +154,7 @@
       <div class="container">
         <h2>Start With a Free Website & Systems Review</h2>
         <p>
-          In 20 minutes, we’ll review your current site and digital systems
+          In 20 minutes, we'll review your current site and digital systems
           and identify clear opportunities to improve performance and efficiency.
         </p>
         <a href="https://calendly.com/william-hullingerdigital/30min" 
@@ -170,10 +171,25 @@
     <!-- footer section-->
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2026 Hullinger Digital. All rights reserved</p>
+       <p>
+        © <span id="year"></span> Hullinger Digital. All rights reserved
+      </p>
+
+      <p>
+        Modern Websites & Smart Automation for Growing Businesses
+      </p>
       </div>
     </footer>
 
+    <!-- =========================
+       SIMPLE FOOTER SCRIPT
+  ========================== -->
+
+  <script>
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+  </script>
 
   <script src="script.js" defer></script>
 </body>

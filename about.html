@@ -73,29 +73,51 @@
 
   <!-- FOUNDER -->
 
-  <section class="section about-founder section-card">
-    <div class="container about-founder__content">
-      <h2 class="section__title about-founder__title">The Founder</h2>
+  <section class="about">
+  <div class="container about__container">
 
-      <p class="section__text about-founder__text">
-        Hullinger Digital was founded by William Hullinger with a simple mission:
-        help businesses create websites that represent them professionally and support their growth.
+    <div class="about__image">
+      <img src="images/William-hullinger-web-developer.jpeg" alt="William Hullinger - Founder of Hullinger Digital">
+    </div>
+
+    <div class="about__content">
+      <h2 class="about__title">Meet the Developer Behind Hullinger Digital</h2>
+
+      <p class="about__text">
+        Hi, I'm William Hullinger, founder of Hullinger Digital. Hullinger Digital started form a simple idea:
+        many small businesses rely on websites that don't represent the quality of their the work they actually do. 
+          I wanted to change that by creating a web development service focused on building modern, 
+          effective websites for any business that needs it.
       </p>
 
-      <p class="section__text about-founder__text">
-        Many businesses rely on websites that are outdated, difficult to manage,
-        or ineffective at communicating their value. Hullinger Digital focuses
-        on building clean, modern websites that are simple, functional,
-        and designed around real business goals.
+      <p class="about__text">
+        Before getting into web development, I worked in hands-on industries where reputaion, reliability, 
+        and quality of work matter. That perspective has shaped how I approach web development, 
+        and it’s why I focus on building websites that not only look good but also support the long-term success of the businesses I work with.
       </p>
 
-      <p class="section__text about-founder__text">
-        Every project begins by understanding the business itself —
-        what it does, who it serves, and what the website needs to accomplish.
+      <p class="about__text">
+        My focus is simple - create clean, modern websites that clearly communicate what a business does and help 
+        customers take the next step. I believe every business deserves a website that represents the quality of their work, 
+        and that's what I strive to deliver with every project.
       </p>
+
+      <p class="about__text">
+        Every project starts by understanding the business, the people they serve, and what the website actually needs to accomplish. 
+        From there, I focus on building a clear structure, designing a clean experience, and implementing the right tools to support 
+        the business moving forward.
+      </p>
+
+      <ul class="about__list">
+        <li>Missouri-based web developer</li>
+        <li>Specializing in modern websites and local SEO</li>
+        <li>Clean, modern, conversion-focused design</li>
+      </ul>
 
     </div>
-  </section>
+
+  </div>
+</section>
 
   <!-- WEBSITE PRINCIPLES -->
 
@@ -137,16 +159,25 @@
       <h2 class="section__title about-approach__title">How I Approach Projects</h2>
 
       <p class="section__text about-approach__text">
-        Every business is different, which means every website should be built
+        Every business is different, so every website should be built
         with its specific goals in mind.
       </p>
 
-      <p class="section__text about-approach__text">
-        Projects begin by understanding the business, the target customer,
-        and the purpose of the website. From there, the focus is on building
-        a clear structure, designing a clean experience, and implementing
-        the right tools to support the business moving forward.
-      </p>
+      <p class="section__text about-approach__text"><strong>Projects typically follow three steps:</strong></p>
+
+     <ul class="list about-approach__list">
+
+        <li class="list__item about-approach__item">
+           Understand the business and its audience 
+        </li>
+
+        <li class="list__item about-approach__item">
+          Design a clear structure and user experience that supports the business goals
+        </li>
+
+        <li class="list__item about-approach__item">
+          Build a fast, modern website that supports real business goals and can grow with the business over time
+        </li>
 
       <p class="section__text about-approach__text">
         The result is a website that not only looks professional,
@@ -178,11 +209,25 @@
 
 </main>
 
-<footer class="footer">
-  <div class="container">
-    <p>© 2026 Hullinger Digital. All rights reserved</p>
-  </div>
-</footer>
+<!-- footer section-->
+    <footer class="footer">
+      <div class="container">
+       <p>
+        © <span id="year"></span> Hullinger Digital. All rights reserved
+      </p>
 
+      <p>
+        Modern Websites & Smart Automation for Growing Businesses
+      </p>
+      </div>
+    </footer>
+
+  <script>
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+  </script>
+
+  <script src="script.js" defer></script>
 </body>
 </html>

@@ -171,13 +171,25 @@
 
   </main>
 
-  <!-- footer section-->
+<!-- footer section-->
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2026 Hullinger Digital. All rights reserved</p>
+       <p>
+        © <span id="year"></span> Hullinger Digital. All rights reserved
+      </p>
+
+      <p>
+        Modern Websites & Smart Automation for Growing Businesses
+      </p>
       </div>
     </footer>
-  
 
+  <script>
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+  </script>
+
+  <script src="script.js" defer></script>
 </body>
 </html>

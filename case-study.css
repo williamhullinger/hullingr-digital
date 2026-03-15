@@ -234,6 +234,10 @@ a:focus-visible {
   .case-study__meta {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .site-header {
+    position: static;
+  }
 }
 
 @media (min-width: 960px) {

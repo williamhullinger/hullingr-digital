@@ -978,6 +978,10 @@ text-decoration:underline;
   .hero__lead {
     font-size: 1rem;
   }
+
+  .site-header {
+    position: static;
+  }
 }
 
 /* ABOUT SECTION */
@@ -1042,7 +1046,4 @@ text-decoration:underline;
   .about__container {
     grid-template-columns: 380px minmax(0, 620px);
   }
-.site-header {
-  position: static;
-}
 }

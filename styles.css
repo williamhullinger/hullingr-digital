@@ -1042,5 +1042,7 @@ text-decoration:underline;
   .about__container {
     grid-template-columns: 380px minmax(0, 620px);
   }
-
+.site-header {
+  position: static;
+}
 }
